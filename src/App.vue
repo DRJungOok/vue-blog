@@ -1,8 +1,11 @@
 <template>
-  <div>hello world</div>
+  <mainLeft />
+  <mainHeader />
 </template>
 
-<script>
+<script setup>
+import mainLeft from '@/components/Left/MainLeft.vue'
+import mainHeader from '@/components/Header/MainHeader.vue'
 </script>
 
 <style>
