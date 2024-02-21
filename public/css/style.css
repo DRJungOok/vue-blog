@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    background-color: white;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    border: 1px solid black;
+    height: calc(10vh - 1px);
+}
+
+.side {
+    position: absolute;
+    background-color: white;
+    width: 10vw;
+    height: 100vh;
+    top: calc(100% - 90vh);
+    left: 0;
+    border: 1px black solid;
+}
