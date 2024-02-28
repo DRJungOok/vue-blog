@@ -1,6 +1,7 @@
 <template>
   <mainLeft />
   <mainHeader />
+  <RouterView />
 </template>
 
 <script setup>
