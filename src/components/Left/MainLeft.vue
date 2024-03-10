@@ -1,5 +1,5 @@
 <template>
-	<div class="side">
+	<div class="side" id="side">
 				<ul>
 					<li @click="toggleMenu('front')" :aria-expanded="isMenuOpen('front')" :class="{ 'active': 'front' }">
 						<a href="javascript: void(0);" class="main-menu"><span>front-end</span></a>
