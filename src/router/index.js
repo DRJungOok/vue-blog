@@ -2,7 +2,10 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
 	history: createWebHistory(),
-	routes: [
+	routes
+})
+
+const routes = [
 		{
 			path: '/',
             name: 'home',
@@ -58,7 +61,6 @@ const router = createRouter({
 			name: 'postgres',
 			component: () => import('@/components/Left/database/DBpostgres.vue')
 		},
-	],
-})
+]
 
 export default router

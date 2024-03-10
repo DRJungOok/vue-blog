@@ -2,80 +2,81 @@
 	<div class="side">
 				<ul>
 					<li @click="toggleMenu('front')" :aria-expanded="isMenuOpen('front')" :class="{ 'active': 'front' }">
-						<a href="javascript: void(0);"><span>front-end</span></a>
+						<a href="javascript: void(0);" class="main-menu"><span>front-end</span></a>
 						<ul v-show="isMenuOpen('front')" class="sub-menu">
 							<li>
-								<RouterLink to="/front/FrontHtml">
+								<router-link to="/front/FrontHtml">
 										<span>html</span>
-								</RouterLink>
+								</router-link>
 							</li>
 							<li>
-								<RouterLink to="/front/FrontCss">
+								<router-link to="/front/FrontCss">
 									<span>css</span>
-								</RouterLink>
+								</router-link>
 							</li>
                             <li>
-								<RouterLink to="/front/FrontJs">
+								<router-link to="/front/FrontJs">
 									<span>js</span>
-								</RouterLink>
+								</router-link>
 							</li>
                             <li>
-								<RouterLink to="/front/FrontVue">
+								<router-link to="/front/FrontVue">
 									<span>vue</span>
-								</RouterLink>
+								</router-link>
 							</li>
                         </ul>
 					</li>
 					<li @click="toggleMenu('back')" :aria-expanded="isMenuOpen('back')" :class="{ 'active': 'back' }">
-						<a href="javascript: void(0);" :class="{ 'expanded': isMenuOpen('back') }"><span>back-end</span></a>
+						<a href="javascript: void(0);" :class="{ 'expanded': isMenuOpen('back') }" class="main-menu"><span>back-end</span></a>
 						<ul v-show="isMenuOpen('back')" class="sub-menu">
 							<li>
-								<RouterLink to="/back/BackJava">
+								<router-link to="/back/BackJava">
 									<span>java</span>
-								</RouterLink>
+								</router-link>
 							</li>
                             <li>
-								<RouterLink to="/back/BackSpring">
+								<router-link to="/back/BackSpring">
 									<span>springboot</span>
-								</RouterLink>
+								</router-link>
 							</li>
 						</ul>
 					</li>
                     <li @click="toggleMenu('database')" :aria-expanded="isMenuOpen('database')" :class="{ 'active': 'database' }">
-						<a href="javascript: void(0);" :class="{ 'expanded': isMenuOpen('database') }"><span class="sub-menu">DataBases</span></a>
+						<a href="javascript: void(0);" :class="{ 'expanded': isMenuOpen('database') }" class="main-menu"><span>DataBases</span></a>
 						<ul v-show="isMenuOpen('database')" class="sub-menu">
 							<li>
-								<RouterLink to="/database/DBmySql">
+								<router-link to="/database/DBmySql">
 									<span>mysql</span>
-								</RouterLink>
+								</router-link>
 							</li>
                             <li>
-								<RouterLink to="/database/DBMariadb">
+								<router-link to="/database/DBMariadb">
 									<span>mariaDB</span>
-								</RouterLink>
+								</router-link>
 							</li>
                             <li>
-								<RouterLink to="/database/DBpostgres">
+								<router-link to="/database/DBpostgres">
 									<span>postgreSQL</span>
-								</RouterLink>
+								</router-link>
 							</li>
 						</ul>
 					</li>
 					<li @click="toggleMenu('server')" :aria-expanded="isMenuOpen('server')" :class="{ 'active': 'server' }">
-						<a href="javascript: void(0);" :class="{ 'expanded': isMenuOpen('server') }"><span>Servers</span></a>
+						<a href="javascript: void(0);" :class="{ 'expanded': isMenuOpen('server') }" class="main-menu"><span>Servers</span></a>
 						<ul v-show="isMenuOpen('server')" class="sub-menu">
 							<li>
-								<RouterLink to="/server/apache">
+								<router-link to="/server/apache">
 									<span>Apache</span>
-								</RouterLink>
+								</router-link>
 							</li>
                             <li>
-								<RouterLink to="/server/geoserver">
+								<router-link to="/server/geoserver">
 									<span>Geoserver</span>
-								</RouterLink>
+								</router-link>
 							</li>
 						</ul>
 					</li>
+					<router-view />
 				</ul>
 			</div>
 </template>
